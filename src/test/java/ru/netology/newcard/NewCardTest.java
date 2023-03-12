@@ -169,8 +169,7 @@ public class NewCardTest {
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+74991111111");
         driver.findElement(By.className("button__content")).click();
 
-
-        Assertions.assertTrue(driver.findElement(By.className("input_invalid")).isDisplayed());
+        Assertions.assertTrue(driver.findElement(By.cssSelector("[data-test-id='agreement'].input_invalid")).isDisplayed());
 
     }
 
